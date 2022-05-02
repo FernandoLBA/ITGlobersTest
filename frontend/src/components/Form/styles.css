@@ -1,18 +1,22 @@
 .form{
+  font-size: .7rem;
   display: flex;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  /* padding: 50px; */
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
 .welcome{
   text-align: left;
-  margin-bottom: 1rem;
+  margin: 2rem 0 1rem;
 }
 
 .welcome span{
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: bolder;
+  text-transform: uppercase;
 }
 
 .formulario{
@@ -21,26 +25,31 @@
   flex-direction: column;
   margin: 1rem 0;
   background-color: var(--text-light);
-  padding: 2rem;
-  width: 40%;
-  background-color: aqua;
+  padding: 1rem;
+  width: 35%;
 }
 
 .formulario h3{
   text-align: left;
   margin-bottom: 1rem;
+  color: var(--primary-color);
 }
 
 .input {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
+}
+
+.input label{
+  font-size: .7rem;
+  font-weight: bold;
 }
 
 .input input {
   border: none;
-  border-bottom: 1px solid var(--text-dark);
+  border-bottom: 1px solid var(--primary-color);
   outline: none;
   padding: .3rem .5rem;
   width: 100%;
@@ -69,4 +78,14 @@
 
 .tips{
   font-size: .6rem;
+}
+
+@media screen and (max-width: 920px) {
+  .welcome {
+    margin: 1rem 1.5rem;
+  }
+
+  .formulario{
+    width: 80%;
+  }
 }

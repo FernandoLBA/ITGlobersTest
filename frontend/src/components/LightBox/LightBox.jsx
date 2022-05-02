@@ -6,7 +6,7 @@ const LightBox = () => {
   return (
     <div className="lightBox">
       <div className="popup">
-        <h3>¡Listo!</h3>
+        <h2>¡Listo!</h2>
         <i>
           <MdCheckCircle />
         </i>

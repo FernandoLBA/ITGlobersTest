@@ -9,10 +9,10 @@ const Form = ({ airline }) => {
 
   return (
     <div className="form">
-      <p className="welcome">
+      <h3 className="welcome">
         Hola, bienvenido, sabemos que quieres viajar en un
         <span> {airline}</span>, por favor diligencia el siguiente formulario:
-      </p>
+      </h3>
 
       <div className="formulario">
         <h3>Formulario de registro</h3>

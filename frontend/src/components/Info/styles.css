@@ -1,5 +1,13 @@
 .info{
-  margin-top: 1rem;
-  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  height: 100vh;
+}
+
+@media screen and (max-width: 920px) {
+  .info {
+    margin: 0 1rem;
+  }
 }

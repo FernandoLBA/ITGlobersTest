@@ -1,10 +1,11 @@
 .navbar {
-  position: fixed;
+  position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--primary-color);
   padding: 2rem;
+  width: 100%;
 }
 
 .navigation {
@@ -36,5 +37,27 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.5rem;
   color: var(--text-dark);
+  margin-left: .5rem;
   font-weight: bold;
+}
+
+@media screen and (max-width: 920px) {
+  .navbar{
+    flex-direction: column;
+  }
+
+  .navigation {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100vw;
+  }
+
+  .brand{
+    margin-bottom: 1rem;
+  }
+
+  .brand a span{
+    font-size: 1.5rem;
+  }
 }

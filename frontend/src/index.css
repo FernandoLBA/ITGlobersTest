@@ -3,12 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 
-  /* color: #fdf5e6; */
   /* Paleta de colores */
   --text-light: #f8f8ff;
   --text-dark: #1b1919;
-  --primary-color: #dc143c;
-  --secondary-color: #ad0b2b;
+  --primary-color: #2959b2;
+  --secondary-color: #1a3d7f;
   --background-light: #fdf5e6;
 }
 
@@ -25,28 +24,4 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-@media screen and (max-width: 920px) {
-  .navbar{
-    flex-direction: column;
-  }
-
-  .navigation {
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100px;
-  }
-
-  .brand{
-    margin-bottom: 1rem;
-  }
-
-  .brand a span{
-    font-size: 2rem;
-  }
-
-  .brand a i{
-    margin-right: .5rem;
-  }
 }
