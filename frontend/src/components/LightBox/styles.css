@@ -1,0 +1,20 @@
+.lightBox{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(8px);
+}
+
+.popup{
+  color: var(--text-light);
+  background-color: var(--primary-color);
+  padding: 2rem;
+}
+
+.popup i{
+  color: var(--text-light);
+  font-size: 2rem;
+}
