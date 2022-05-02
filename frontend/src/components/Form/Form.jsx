@@ -15,7 +15,10 @@ const Form = ({ airline }) => {
       </h3>
 
       <div className="formulario">
-        <h3>Formulario de registro</h3>
+        <div className="text">
+          <h3>Formulario de registro</h3>
+          <span className="tips" id="required">Campos obligatorios (*)</span>
+        </div>
         <form
           onSubmit={(e) => {
             handleSubmit(e, state, setState) && setPopup(!popup);

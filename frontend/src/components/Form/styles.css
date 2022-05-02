@@ -1,5 +1,5 @@
 .form{
-  font-size: .7rem;
+  font-size: .8rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,15 +35,20 @@
   color: var(--primary-color);
 }
 
+.text{
+  text-align: right;
+  color: var(--primary-color);
+}
+
 .input {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: .5rem;
+  margin-bottom: .7rem;
 }
 
 .input label{
-  font-size: .7rem;
+  font-size: .8rem;
   font-weight: bold;
 }
 
@@ -77,15 +82,16 @@
 }
 
 .tips{
-  font-size: .6rem;
+  font-size: .7rem;
 }
 
 @media screen and (max-width: 920px) {
   .welcome {
     margin: 1rem 1.5rem;
+    padding-top: 2rem;
   }
 
   .formulario{
-    width: 80%;
+    width: 90%;
   }
 }
