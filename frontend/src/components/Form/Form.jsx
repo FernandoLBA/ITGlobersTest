@@ -1,19 +1,11 @@
 import React from "react";
 import { useState } from "react";
-import { handleValidate, handleSubmit } from "../../helpers/";
-import { LightBox } from "../";
+import { handleValidate, handleSubmit, handlePopUp } from "../../helpers/";
 import "./styles.css";
 
 const Form = ({ airline }) => {
   const [state, setState] = useState({});
   const [popup, setPopup] = useState(false);
-
-  const pop = () => {
-    setTimeout(() => {
-      setPopup(!popup);
-    }, 5000);
-    return <LightBox />;
-  };
 
   return (
     <div className="form">
@@ -108,7 +100,7 @@ const Form = ({ airline }) => {
         </form>
       </div>
 
-      {popup && pop()}
+      {popup && handlePopUp(popup, setPopup)}
     </div>
   );
 };
